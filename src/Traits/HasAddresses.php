@@ -1,8 +1,8 @@
 <?php
 
-namespace Kingw1\ThaiAddress\Traits;
+namespace VichOne\ThaiAddress\Traits;
 
-use Kingw1\ThaiAddress\Models\Address;
+use VichOne\ThaiAddress\Models\Address;
 
 trait HasAddresses
 {

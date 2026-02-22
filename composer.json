@@ -1,5 +1,5 @@
 {
-    "name": "kingw1/thai-address",
+    "name": "vichone/thai-address",
     "description": "A Laravel package for managing Thai addresses. from https://github.com/earthchie/jquery.Thailand.js",
     "type": "library",
     "license": "MIT",
@@ -17,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Kingw1\\ThaiAddress\\": "src/"
+            "VichOne\\ThaiAddress\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Kingw1\\ThaiAddress\\ThaiAddressServiceProvider"
+                "VichOne\\ThaiAddress\\ThaiAddressServiceProvider"
             ]
         }
     },

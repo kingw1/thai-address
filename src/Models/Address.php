@@ -1,6 +1,6 @@
 <?php
 
-namespace Kingw1\ThaiAddress\Models;
+namespace VichOne\ThaiAddress\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

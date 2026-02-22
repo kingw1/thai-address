@@ -1,6 +1,6 @@
 <?php
 
-namespace Kingw1\ThaiAddress\Commands;
+namespace VichOne\ThaiAddress\Commands;
 
 use Illuminate\Console\Command;
 
