@@ -13,6 +13,8 @@ return new class extends Migration
             $table->morphs('addressable');
             $table->string('label')->nullable();
             $table->string('address');
+            $table->string('moo')->nullable();
+            $table->string('road')->nullable();
             $table->string('subdistrict')->nullable();
             $table->string('district')->nullable();
             $table->string('province')->nullable();

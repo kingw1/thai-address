@@ -16,6 +16,8 @@ class Address extends Model
         'addressable_id',
         'label',
         'address',
+        'moo',
+        'road',
         'subdistrict',
         'district',
         'province',
