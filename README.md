@@ -92,7 +92,9 @@ Address::create([
     'addressable_type' => 'App\Models\User',
     'addressable_id'   => 1,
     'label'            => 'บ้าน',
-    'address'          => '123 ถนนสุขุมวิท',
+    'address'          => '123',
+    'moo'              => '7',
+    'road'             => 'สุขุมวิท',
     'subdistrict'      => 'คลองเตย',
     'district'         => 'คลองเตย',
     'province'         => 'กรุงเทพมหานคร',
@@ -129,7 +131,9 @@ $user->addresses;
 // เพิ่มที่อยู่ใหม่
 $user->addresses()->create([
     'label'         => 'บ้าน',
-    'address'       => '123 ถนนสุขุมวิท',
+    'address'       => '123',
+    'moo'           => '7',
+    'road'          => 'สุขุมวิท',
     'subdistrict'   => 'คลองเตย',
     'district'      => 'คลองเตย',
     'province'      => 'กรุงเทพมหานคร',
@@ -160,8 +164,8 @@ $user->addresses()->where('label', 'บ้าน')->first();
 | `province_code` | string | รหัสจังหวัด |
 | `province` | string | ชื่อจังหวัด |
 | `postal_code` | string | รหัสไปรษณีย์ |
-| `created_at` | timestamp | |
-| `updated_at` | timestamp | |
+| `created_at` | timestamp |
+| `updated_at` | timestamp |
 | `deleted_at` | timestamp | Soft delete |
 
 ### `addresses`
@@ -172,7 +176,9 @@ $user->addresses()->where('label', 'บ้าน')->first();
 | `addressable_type` | string | ชื่อ Model ที่เชื่อมอยู่ |
 | `addressable_id` | bigint | ID ของ Model ที่เชื่อมอยู่ |
 | `label` | string | ชื่อที่อยู่ เช่น บ้าน, ที่ทำงาน |
-| `address` | string | ที่อยู่ (บ้านเลขที่ / ถนน) |
+| `address` | string | บ้านเลขที่ |
+| `moo` | string | หมู่ที่ |
+| `road` | string | ถนน |
 | `subdistrict` | string | ตำบล / แขวง |
 | `district` | string | อำเภอ / เขต |
 | `province` | string | จังหวัด |
