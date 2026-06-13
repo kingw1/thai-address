@@ -1,6 +1,6 @@
 <?php
 
-namespace VichOne\ThaiAddress\Commands;
+namespace Wichai\ThaiAddress\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;

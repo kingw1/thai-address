@@ -1,10 +1,10 @@
 <?php
 
-namespace VichOne\ThaiAddress;
+namespace Wichai\ThaiAddress;
 
 use Illuminate\Support\ServiceProvider;
-use VichOne\ThaiAddress\Commands\InstallThaiAddresses;
-use VichOne\ThaiAddress\Commands\SyncThaiAddresses;
+use Wichai\ThaiAddress\Commands\InstallThaiAddresses;
+use Wichai\ThaiAddress\Commands\SyncThaiAddresses;
 
 class ThaiAddressServiceProvider extends ServiceProvider
 {

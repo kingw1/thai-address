@@ -16,7 +16,7 @@ Laravel Package สำหรับจัดการข้อมูลที่�
 ## การติดตั้ง
 
 ```bash
-composer require vichone/thai-address
+composer require wiwichai/thai-address
 ```
 
 ---
@@ -65,7 +65,7 @@ php artisan thai-addresses:sync --dry-run
 ใช้สำหรับค้นหาข้อมูลที่อยู่ไทย
 
 ```php
-use VichOne\ThaiAddress\Models\ThaiAddress;
+use Wichai\ThaiAddress\Models\ThaiAddress;
 
 // ค้นหาตำบล
 ThaiAddress::where('subdistrict', 'like', '%ลาดยาว%')->get();
@@ -85,7 +85,7 @@ ThaiAddress::where('district_code', '1001')->get();
 ใช้สำหรับบันทึกที่อยู่ของ Model ต่างๆ ในระบบ รองรับ Polymorphic Relationship
 
 ```php
-use VichOne\ThaiAddress\Models\Address;
+use Wichai\ThaiAddress\Models\Address;
 
 // สร้างที่อยู่ใหม่
 Address::create([
@@ -112,7 +112,7 @@ Address::create([
 ### 1. เพิ่ม Trait เข้า Model
 
 ```php
-use VichOne\ThaiAddress\Traits\HasAddresses;
+use Wichai\ThaiAddress\Traits\HasAddresses;
 
 class User extends Authenticatable
 {
